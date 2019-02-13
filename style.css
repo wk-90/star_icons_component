@@ -1,0 +1,65 @@
+.star8 {
+	display: inline-block;
+	margin: 2em;
+	transform: rotate(22deg);
+	transition: background linear .3s;
+}
+
+.star8:before {
+	background: white;
+	content: "";
+	position: absolute;
+	top: -5px;
+	left: -5px;
+	transform: rotate(45deg);
+
+}
+
+.star8, .star8:before, i.fa {
+	width: 80px;
+	height: 80px;
+
+}
+
+.gold, .gold:before {
+	border: 6px solid #ffc107;
+}
+
+.orange, .orange:before {
+	border: 6px solid #fd7e33;
+}
+
+.blue, .blue:before {
+	border: 6px solid #3fb0ac;
+}
+
+.fa {
+	margin: 0;
+	position: absolute;
+	background: white;
+	font-size: 60px;
+}
+
+.fa:before {
+	transform: rotate(-22deg);
+	position: absolute;
+	margin: 10px;
+}
+
+.gold:hover:before, .gold:hover, .gold:hover i.fa {
+	background: #ffc107;
+	color: white;
+	transition: ease-in-out .3s;
+}
+
+.orange:hover:before, .orange:hover, .orange:hover i.fa {
+	background: #fd7e33;
+	color: white;
+	transition: ease-in-out .3s;
+}
+
+.blue:hover:before, .blue:hover, .blue:hover i.fa {
+	background: #3fb0ac;
+	color: white;
+	transition: ease-in-out .3s;
+}
